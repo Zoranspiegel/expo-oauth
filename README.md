@@ -1,6 +1,6 @@
-# OAUTH + GOOGLE
+# OAUTH + GOOGLE + EXPO
 
-## DEPENDENCIES
+## 1. DEPENDENCIES
 
 ```bash
 npx expo install expo-auth-session expo-crypto
@@ -14,7 +14,7 @@ npx expo install expo-secure-store
 npm i jose
 ```
 
-## app.json setting
+## 2. app.json setting
 
 ```json
 {
