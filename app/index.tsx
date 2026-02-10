@@ -1,6 +1,23 @@
-import { Text, View } from "react-native";
+import { useAuth } from "@/context/auth";
+import { ActivityIndicator, Text, View } from "react-native";
 
 export default function Index() {
+  const { user, isLoading } = useAuth();
+
+  if (isLoading) {
+    return (
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <ActivityIndicator />
+      </View>
+    );
+  }
+
   return (
     <View
       style={{
@@ -9,7 +26,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>{JSON.stringify(user)}</Text>
     </View>
   );
 }

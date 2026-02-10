@@ -77,3 +77,26 @@ EXPO_PUBLIC_SCHEME=expooauth://
 JWT_SECRET=******
 JWT_REFRESH_SECRET=******
 ```
+
+## 5. APP PREBUILD
+
+```bash
+code .gitignore
+```
+
+```
+<!-- ... -->
+/ios
+/android
+<!-- ... -->
+```
+
+```bash
+npx expo prebuild
+```
+
+```bash
+npx expo run:ios
+```
+
+(Video step)
