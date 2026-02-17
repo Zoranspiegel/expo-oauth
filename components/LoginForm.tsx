@@ -13,7 +13,7 @@ export default function LoginForm() {
       }}
     >
       <Text>Login</Text>
-      <Button title="Sign in with Google" onPress={() => signIn()} />
+      <Button title="Sign in with Google" onPress={signIn} />
     </View>
   );
 }

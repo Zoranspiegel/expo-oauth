@@ -32,6 +32,7 @@ export default function Index() {
       }}
     >
       <Text>{user.name}</Text>
+      <Text>{user.email}</Text>
       <Button title="Sign out" onPress={() => signOut()} />
     </View>
   );
